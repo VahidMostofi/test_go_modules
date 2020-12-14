@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/vahidmostofi/test-go-modules/internal/unique"
+	"github.com/vahidmostofi/test_go_modules/internal/unique"
 )
 
 // Database store items in different ways for fun

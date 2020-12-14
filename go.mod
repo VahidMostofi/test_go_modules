@@ -1,4 +1,4 @@
-module github.com/vahidmostofi/test-go-modules
+module github.com/vahidmostofi/test_go_modules
 
 go 1.15
 
