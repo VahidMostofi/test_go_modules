@@ -7,13 +7,13 @@ type UniqueDatabase struct {
 	set mapset.Set
 }
 
-func (ud UniqueDatabase) init() {
+func (ud *UniqueDatabase) init() {
 	set := mapset.NewSet()
 	ud.set = set
 }
 
 // Add ...
-func (ud UniqueDatabase) Add(value interface{}) error {
+func (ud *UniqueDatabase) Add(value interface{}) error {
 	if ud.set == nil {
 		ud.init()
 	}
@@ -22,7 +22,7 @@ func (ud UniqueDatabase) Add(value interface{}) error {
 }
 
 // Count well it counts
-func (ud UniqueDatabase) Count() int {
+func (ud *UniqueDatabase) Count() int {
 	if ud.set == nil {
 		ud.init()
 	}

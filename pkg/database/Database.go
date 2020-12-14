@@ -12,7 +12,7 @@ type Database interface {
 
 // GetUniqueDatabase returns a unique database
 func GetUniqueDatabase() Database {
-	ud := unique.UniqueDatabase{}
+	ud := &unique.UniqueDatabase{}
 
 	return ud
 }
